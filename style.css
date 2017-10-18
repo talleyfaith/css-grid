@@ -2,6 +2,40 @@
   font-family: sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+div {
+  border: 1px solid black;
+}
+
 .grid-set {
   display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+}
+
+.item {
+  padding: 10px;
+}
+
+.a {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.b {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.c {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.d {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }

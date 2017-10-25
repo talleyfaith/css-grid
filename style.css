@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Titillium+Web');
+
 html {
     box-sizing: border-box;
 }
@@ -5,7 +7,12 @@ html {
 body {
   margin: 0;
   padding: 15px;
-  font-family: sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Julius Sans One', sans-serif;
+
 }
 
 img {
@@ -26,7 +33,8 @@ div {
   grid-gap: 10px;
   grid-template-areas:
     "header header header"
-    "side side pic"
+    "intro intro intro"
+    "art-pic art-info art-info"
     "footer footer footer";
 }
 
@@ -41,14 +49,18 @@ div {
 }
 
 .b {
-  grid-area: side;
+  grid-area: intro;
 }
 
 .c {
-  grid-area: pic;
+  grid-area: art-pic;
 }
 
 .d {
+  grid-area: art-info;
+}
+
+.z {
   grid-area: footer;
 }
 
@@ -58,7 +70,7 @@ div {
     grid-template-columns: 100%;
     grid-template-areas:
       "header"
-      "side"
-      "pic"
+      "intro"
+      "art-pic art-info"
       "footer";
   }

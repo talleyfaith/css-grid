@@ -19,10 +19,6 @@ img {
   max-width: 100%;
 }
 
-div {
-
-}
-
 .grid-set {
   display: grid;
   margin: 0 auto;
@@ -35,6 +31,7 @@ div {
     "header header header"
     "intro intro intro"
     "art-pic art-info art-info"
+    "vg-info vg-pic vg-pic"
     "footer footer footer";
 }
 
@@ -60,6 +57,14 @@ div {
   grid-area: art-info;
 }
 
+.e {
+  grid-area: vg-pic;
+}
+
+.f {
+  grid-area: vg-info;
+}
+
 .z {
   grid-area: footer;
 }
@@ -71,6 +76,9 @@ div {
     grid-template-areas:
       "header"
       "intro"
-      "art-pic art-info"
+      "art-pic"
+      "art-info"
+      "vg-pic"
+      "vg-info"
       "footer";
   }
